@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile store</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+
+<body>
+    <header class="head">
+        <img src="/mobile.jpg" alt="logo" width="50px" height="50px">
+        <img src="/mobile.jpg" alt="mbl" width="50px" height="50px">
+    </header>
+    <h1>Mobile store</h1>
+    <a href="#cart"></a>
+    <div class="home" id="home">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#service">Services</a></li>
+        </ul>
+    </div>
+    <main>
+        <h2>Welcome to Mobile store</h2>
+        <section class="Home" id="home">
+            <form action="#Home" method="post">
+                <label for="userbrand">Select your brand:</label>
+                <select name="userbrand" id="userbrand">
+                    <option>iphone</option>
+                    <option>Redmi</option>
+                    <option>Realme</option>
+                    <option>Oneplus</option>
+                </select>
+                <label for="username">Enter your name:</label>
+                <input type="text" name="username" placeholder="Enter your name" required>
+                <label for="userno">Enter your phone no:</label>
+                <input type="tel" name="userno" placeholder="Enter your number" pattern="[6-9]{1}[0-9]{9}" required>
+                <label for="dob">Enter your date of birth:</label>
+                <input type="date" name="dob" required>
+                <label for="email">Enter your email:</label>
+                <input type="email" name="email" required>
+                <label for="password">Enter your password:</label>
+                <input type="password" name="password" required>
+                <div></div>
+                <button onclick="showpop()" >Submit</button>
+            </form>
+            <script>
+                function showpop(){
+                    alert("Submitted");
+                }
+            </script>
+    </main>
+    <footer>
+        <section id="about">
+            <h2>About us</h2>
+            <p>Mobile store is best and good shop in the city.</p>
+            <p>We have lots of mobile brand availabel in your budget friendly shop please contact us.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact us</h2>
+            <div>
+                Mobile store
+                <p>Near Sringeri bus stand, Sringeri
+                    ,Chikmaglore dist, Karnataka</p>
+                <p>577123</p>
+                <p>Mobile no:7653532334</p>
+
+            </div>
+        </section>
+        <section id="service">
+            <h2>Our Services provided </h2>
+            <p>New mobile</p>
+            <p>Exchange mobile</p>
+            <p>Mobile accessories</p>
+            <p>Mobile repair</p>
+            <p>SIM card available</p>
+        </section>
+    </footer>
+</body>
+
+</html>
